@@ -25,7 +25,14 @@
   <link rel="stylesheet" href="style.css">
   <title>Racing Graph Yasin</title>
   <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
-
+ <script>
+    var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+    viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){
+    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}
+    </script>
 </head>
 
 <body>
@@ -40,14 +47,7 @@
  
   <script src="main.js"></script>
   <h5 style="text-align: center;">Copyright &#169; 2020 Yasin Ansari<br/>
-  <script>
-    var viewMode = getCookie("view-mode");
-if(viewMode == "desktop"){
-    viewport.setAttribute('content', 'width=1024');
-}else if (viewMode == "mobile"){
-    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
-}
-    </script>
+ 
   
 </body>
 
